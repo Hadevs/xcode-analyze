@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['xcode-analyze.py'],
-             pathex=['/Users/hadevs/xcode-analyze/Source'],
+             pathex=['/Users/hadevs/xcode-analyze'],
              binaries=[],
              datas=[],
              hiddenimports=[],

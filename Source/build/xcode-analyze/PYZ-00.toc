@@ -1,4 +1,4 @@
-('/Users/hadevs/python/build/xcode-analyze/PYZ-00.pyz',
+('/Users/hadevs/xcode-analyze/Source/build/xcode-analyze/PYZ-00.pyz',
  [('encodings.aliases',
    '/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/aliases.py',
    'PYMODULE'),

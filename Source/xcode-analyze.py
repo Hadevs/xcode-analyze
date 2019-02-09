@@ -1,6 +1,15 @@
 import os
 import math
 from termcolor import colored
+import sys
+isNeedToParsePods = False
+
+for x in sys.argv[1:]:
+     if x == "--with_pods":
+       isNeedToParsePods = True
+
+if isNeedToParsePods:
+  print("Parsing with Pods folder...")
 
 cLinesCount = 0
 cFilesCount = 0
@@ -24,7 +33,12 @@ allSupportedFilesCount = 0
 
 for root, dirs, files in os.walk(".", topdown=False):
    for name in files :
-     with open(os.path.join(root, name)) as f:
+     path = os.path.join(root, name)
+     with open(path) as f:
+      if "Pods" in path:
+        if isNeedToParsePods == False:
+          continue
+      
       readLinesCount = len(f.readlines())
       allLinesCount += readLinesCount
       allFilesCount += 1
